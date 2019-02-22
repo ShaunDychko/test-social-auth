@@ -22,7 +22,11 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
-        "drush/drush": "^9.0.0",
+        "drupal/social_api": "2.x-dev",
+        "drupal/social_auth": "2.x-dev",
+        "drupal/social_auth_facebook": "2.x-dev",
+        "drupal/social_auth_google": "2.x-dev",
+        "drush/drush": "^8.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
@@ -76,6 +80,14 @@
             "initial": {
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
+            }
+        },
+        "patches": {
+            "drupal/social_auth": {
+                "redirect": "https://www.drupal.org/files/issues/2019-02-21/social-auth-3033444-13.patch"
+            },
+            "drupal/social_auth_google": {
+                "redirect": "https://www.drupal.org/files/issues/2019-02-21/social-auth-google-3033444-13.patch"
             }
         }
     }
