@@ -84,7 +84,8 @@
         },
         "patches": {
             "drupal/social_auth": {
-                "redirect": "https://www.drupal.org/files/issues/2019-02-21/social-auth-3033444-13.patch"
+                "redirect": "https://www.drupal.org/files/issues/2019-02-21/social-auth-3033444-13.patch",
+                "include module version": "https://www.drupal.org/files/issues/2019-02-22/social-auth-include-version-3035179-2.patch"
             },
             "drupal/social_auth_google": {
                 "redirect": "https://www.drupal.org/files/issues/2019-02-21/social-auth-google-3033444-13.patch"
